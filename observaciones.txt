@@ -1,0 +1,7 @@
+Adrian Humberto Tipo Leon  - 20206466
+En este lab, se solicito realizar una aplicación de pronosticos a través de APIS. 
+En primer lugar, se desarrollaron los dos activities, el primero valida la conexion a internet.
+Se crearon fragments (locations, forecast y futureforecast) y se creo un bottom navigation para navegar entre fragments.
+Luego, se desarrollo el codigo par llamar a la api, llamado WeatherApi
+Ademas se uso ReciclerView y adapters para listar la información buscada a traves de las APIS en los fragments. 
+Para el desarrollo de esta app, se utilizo chat gpt, principalmente en el weather api para extraer la información.
