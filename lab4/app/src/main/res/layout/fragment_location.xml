@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#03A9F4"
+    android:padding="16dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="Busqueda de locaciones"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- EditText para la búsqueda -->
+        <EditText
+            android:id="@+id/etLocationSearch"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:hint="Buscar por ciudad/distrito"
+            android:inputType="text"
+            android:background="@drawable/bg_edittext"
+            android:padding="12dp"
+            />
+
+        <!-- Botón de búsqueda -->
+        <Button
+            android:id="@+id/btnSearchLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar" />
+    </LinearLayout>
+
+    <!-- RecyclerView para mostrar las ubicaciones -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewLocations"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        />
+
+</LinearLayout>
+

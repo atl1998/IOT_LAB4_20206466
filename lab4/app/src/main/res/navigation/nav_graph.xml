@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/locationFragment">
+
+    <!-- Location Fragment -->
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.example.lab4_20206466.LocationFragment"
+        android:label="title_location"
+        tools:layout="@layout/fragment_location">
+
+        <!-- Acción para ir al ForecastFragment -->
+        <action
+            android:id="@+id/action_locationFragment_to_forecastFragment"
+            app:destination="@id/forecastFragment" />
+    </fragment>
+
+    <!-- Forecast Fragment -->
+    <fragment
+        android:id="@+id/forecastFragment"
+        android:name="com.example.lab4_20206466.ForecastFragment"
+        android:label="title_pronostico"
+        tools:layout="@layout/fragment_forecast">
+        <argument
+            android:name="locationId"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="days"
+            app:argType="integer"
+            android:defaultValue="14" />
+    </fragment>
+
+</navigation>
